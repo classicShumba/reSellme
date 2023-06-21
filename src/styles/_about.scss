@@ -1,0 +1,89 @@
+.about{
+    position: relative;
+    min-height: 100dvh;
+
+
+    .about-inner{
+        position: relative;
+        top: calc(-5% - 3rem);
+        left: 0;
+        right: 0;
+
+        img{
+            width: calc(95% - 1rem);
+            max-width: 59rem;
+        }
+    }
+
+    .abt-btn{
+        background: var(--dark-blue);
+        color: var(--sec-color);
+    }
+    .what{
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        gap: 2rem;
+
+        img{
+            max-width: 25rem;
+        }
+
+        .what-text{
+            max-width: 30rem;
+
+            @media screen and (min-width: 62rem) {
+                text-align: left;
+                gap: 5rem;
+
+                .abt-btn{
+                    margin-left: 0;
+                }
+            }
+        }
+    }
+
+    .gt-started{
+        margin: 6rem 0;
+    }
+    .strt-cards{
+        display: flex;
+        gap: 4rem;
+        flex-flow: wrap row;
+    }
+    .strt-crd{
+        min-height: 18em;
+        min-width: 17em;
+        max-width: 20em;
+        padding: 1rem;
+        background: var(--dark-blue);
+        margin: 0 auto;
+        border-radius: .5rem;
+        position: relative;
+        color: var(--sec-color);
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        align-items: center;
+
+
+        svg{
+            max-width: 6rem;
+        }
+    }
+    .strt-btn{
+        margin-top: 4rem;
+        background: var(--acc-blu);
+        color: var(--sec-color);
+        transition: all .3s ease;
+        display: none;
+
+        &:hover{
+            background: var(--dark-blue);
+        }
+
+        @media screen and (min-width: 48rem) {
+            display: flex;
+        }
+    }
+}

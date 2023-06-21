@@ -1,0 +1,86 @@
+@import url('https://fonts.cdnfonts.com/css/avenir-lt-std');
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap');
+@import 'main';
+
+@font-face {
+  font-family: 'Cerapro';
+  src: url(./assets/fonts/CeraPro-Regular.woff2);
+}
+@font-face {
+  font-family: 'Cerapro';
+  src: url(./assets/fonts/CeraPro-Medium.woff2);
+  font-weight: 500;
+}
+@font-face {
+  font-family: 'Cerapro';
+  src: url(./assets/fonts/CeraPro-Bold.woff2);
+  font-weight: 700;
+}
+@font-face {
+  font-family: 'Cerapro';
+  src: url(./assets/fonts/CeraPro-Black.woff2);
+  font-weight: 900;
+}
+
+:root {
+  font-family: 'Alvenier',sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  --pri-color: #003F74;
+  --sec-color: #fff;
+  --acc-grey: #303846;
+  --dark-blue: #011E55;
+  --acc-grn: #018181;
+  --acc-blu: #013D7B;
+
+  // color-scheme: light dark;
+  color: var(--pri-color);
+  // background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+li{
+  list-style: none;
+}
+a{
+  text-decoration: none;
+}
+h1{
+  font-weight: 900;
+  font-family: 'Cerapro', sans-serif;
+  font-size: 3rem;
+}
+h2{
+  font-weight: 900;
+  font-family: 'Cerapro', sans-serif;
+  font-size: calc(2rem + 1vw); 
+}
+h3{
+  font-family: 'Cerapro';
+  font-weight: 900;
+  font-size: calc(1rem + 1vw);
+}
+p{
+  font-family: 'Alvenier',sans-serif;
+}
+body{
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+}
+*{
+  box-sizing: border-box;
+}
+img{
+  width: 100%;
+}
+
+.wrapper{
+  padding: 0 calc(1rem + 2%);
+}
