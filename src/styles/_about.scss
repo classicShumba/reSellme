@@ -5,13 +5,18 @@
 
     .about-inner{
         position: relative;
-        top: calc(-5% - 3rem);
-        left: 0;
-        right: 0;
+        // top: calc(-5% - 3rem);
+        width: 100%;
+        height: calc(30vw + 10rem);
+        // left: 0;
 
         img{
             width: calc(95% - 1rem);
             max-width: 59rem;
+            position: absolute;
+            top: calc(-10% - 5rem);
+            left: 50%;
+            transform: translateX(-50%);
         }
     }
 

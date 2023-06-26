@@ -1,0 +1,28 @@
+.sign-up{
+    position: relative;
+    min-height: calc(90vh - 10vw);
+    color: var(--sec-color);
+    text-align: center;
+
+    img{
+        width: 100%;
+        object-position: center;
+        object-fit: cover;
+        height: calc(90vh - 10vw);
+    }
+
+    .signup-text{
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        display: grid;
+        gap: 1.5rem;
+        left: 0;
+        right: 0;
+    }
+    .signup-btn{
+        background: var(--sec-color);
+        color: var(--acc-blu);
+        font-size: calc(1rem + .5vw);
+    }
+}

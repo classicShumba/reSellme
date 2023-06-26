@@ -1,0 +1,52 @@
+.testimonials{
+    background: var(--dark-blue);
+    padding: 2rem 0;
+    color: var(--sec-color);
+
+    .test-head{
+        max-width: 600px;
+    }
+
+    .testimonies{
+    }
+
+    @media screen and (min-width: 992px) {
+        .test-inner{
+            position: relative;
+
+        display: flex;
+        align-items: center;
+        }
+        .test-head{
+            margin-right: 3rem;
+        }
+        .swiper-nav-btns{
+            // position: absolute;
+            // left: 0;
+            // top: 75%;
+            // z-index: 5;
+        }
+    }
+
+    .testimony{
+        max-width: 350px;
+        min-width: 200px;
+        // padding: 0 2rem;
+        background: var(--acc-blu);
+        margin: 2rem 0;
+
+        .text{
+            padding: 2.5rem;
+            text-align: start;
+            position: relative;
+            
+
+            svg{
+                position: absolute;
+                top: -3rem;
+                left: 1.5rem;
+                width: 3rem;
+            }
+        }
+    }
+}

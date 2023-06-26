@@ -1,0 +1,48 @@
+.faq{
+    margin: 4rem 0;
+
+    @media screen and (min-width: 992px) {
+        display: flex;
+        justify-content: space-around;
+        align-items: flex-start;
+        flex-grow: 1;
+    }
+
+    .faq-head{
+        max-width: 650px;
+        padding-top: 1rem;
+    }
+
+    h2{
+        margin-bottom: 1.5rem;
+    }
+
+    .ques{
+        margin-top: 2rem;
+        text-align: start;
+        max-width: 600px;
+        min-width: 300px;
+        width: 100%;
+    }
+    .que{
+        margin-bottom: 1.5rem;
+    }
+    .head{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        color: var(--sec-color);
+        background: var(--acc-blu);
+        border-radius: .5rem;
+        height: 4rem;
+        padding: 0 1rem;
+        margin-bottom: 1rem;
+
+        h3{
+            font-size: 1.2rem;
+        }
+        svg{
+            max-width: 3rem;
+        }
+    }
+}

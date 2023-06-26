@@ -1,0 +1,31 @@
+.cases{
+    background: var(--acc-bg); 
+    padding: 2rem 0;   
+    text-align: left;
+
+    .case-items{
+        margin: 2rem 0;
+
+        svg{
+            max-width: 4rem;
+            max-height: 4rem;
+        }
+        .case-btn{
+            background: var(--dark-blue);
+            color: var(--sec-color);
+            margin-left: 0;
+            width: 100%;
+        }
+        .case-item{
+            // padding: 1rem 0;
+            min-width: 250px;
+            max-width: 350px;
+            min-height: 375px;
+            margin-bottom: 2rem;
+
+            display: flex;
+            flex-flow: column;
+            justify-content: space-between;
+        }
+    }
+}

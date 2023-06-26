@@ -33,6 +33,7 @@
   --dark-blue: #011E55;
   --acc-grn: #018181;
   --acc-blu: #013D7B;
+  --acc-bg: #f8f8f8;
 
   // color-scheme: light dark;
   color: var(--pri-color);
@@ -54,7 +55,7 @@ a{
 h1{
   font-weight: 900;
   font-family: 'Cerapro', sans-serif;
-  font-size: 3rem;
+  font-size: calc(3rem + 1vw);
 }
 h2{
   font-weight: 900;
@@ -76,6 +77,8 @@ body{
 }
 *{
   box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
 img{
   width: 100%;

@@ -1,3 +1,43 @@
 .features{
     position: relative;
+    display: flex;
+    flex-flow: row wrap;
+    margin: 8rem 0;
+
+    .features-head{
+        min-width: 15em;
+        max-width: 26em;
+        margin: 0 auto;
+
+        h2{
+            margin-top: 0;
+        }
+
+    @media screen and (min-width: 68.124rem) {
+        position: sticky;
+        top: 0;
+    }
+    }
+    .feature-items{
+        display: flex;
+        flex-flow: row wrap;
+        gap: calc(1.5em + 1vw);
+        max-width: 37em;
+        margin: 0 auto;
+    }
+    .feature{
+        max-width: 17em;
+        margin: 0 auto;
+
+        h3{
+            margin: 0;
+        }
+        p{
+            margin: .4rem 0;
+        }
+
+        svg{
+            max-width: 4rem;
+        }
+    }
 }

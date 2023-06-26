@@ -4,7 +4,7 @@ const Features = ({data}) => {
     const ftr = data
     console.log(ftr)
   return (
-    <div className="features">
+    <div className="wrapper features">
         <div className="features-head">
             <h2>{ftr.title}</h2>
             <p>{ftr.text}</p>
