@@ -2,7 +2,6 @@ import '../styles/_features.scss'
 
 const Features = ({data}) => {
     const ftr = data
-    console.log(ftr)
   return (
     <div className="wrapper features">
         <div className="features-head">

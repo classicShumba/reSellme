@@ -14,6 +14,19 @@ const NavBar = () => {
       : setBurgerOpen("burger-open");
   };
 
+  const [ icon, setIcon ] = useState(false);
+
+  const setDarkMode = () => {
+    document.querySelector('body').setAttribute('data-theme', 'dark');
+  }
+  const setLightMode = () => {
+    document.querySelector('body').setAttribute('data-theme', 'light');
+  }
+  const toggleTheme = () => {
+    setIcon(!icon)
+    
+  }
+
   return (
     <header className="wrapper">
       <nav className={burgerOpen === "burger-close" ? "nav-open" : ""}>
@@ -47,9 +60,8 @@ const NavBar = () => {
               <Tabler />
             </NavLink>
           </li>
-          <span>
-            <Sun />
-            <DarkMode className="dark" />
+          <span className="mode-toggle" onClick={()=>{toggleTheme()}} >
+            { icon ? <Sun className="icon" /> : <DarkMode className="icon" /> }
           </span>
           <span className="search">
             <Search />
