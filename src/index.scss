@@ -28,36 +28,62 @@
   font-weight: 400;
 
   --pri-color: #003F74;
-  --sec-color: #fff;
+  --sec-color: #011E55;
   --acc-grey: #303846;
   --dark-blue: #011E55;
   --acc-grn: #018181;
   --acc-blu: #013D7B;
-  --acc-bg: #003f74;
-
+  --acc-bg: #f8f8f8;
+  --f-color: #fff;
+  
   color-scheme: light;
-  color: var(--pri-color);
-  background: var(--acc-bg);
+  color: var(--sec-color);
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
+
+  .hero, header, .abt-btn, .gt-started, .test-inner, .head, .footer{
+    --sec-color: #fff;
+    --acc-bg: #003f74;
+  }
 }
 
 [data-theme="dark"]{
-  color-scheme: dark;
+
   --pri-color: #f8f8f8;
-  --sec-color: #01102c;
+  --sec-color: #fff;
   --acc-grey: #303846;
   --dark-blue: #011E55;
   --acc-grn: #018181;
   --acc-blu: #013D7B;
   --acc-bg: #01102c;
+  
+  color-scheme: dark;
+  color: var(--sec-color);
+  background: var(--acc-bg);
 
-  color: var(--pri-color);
-  background: var(--sec-color);
+  .hero, header, .abt-btn{
+    --sec-color: #011E55;
+  }
+  .wt-btn{
+    --sec-color: #018181;
+    --dark-blue: #fff;
+    background: var(--acc-grn);
+  }
+  .gr-btn{
+    --acc-grn: #fff;
+  }
+  .abt-btn{
+    --sec-color: #fff;
+  }
+
+}
+
+h1,h2,h3,h4,h5,p,a{
+  color: var(--sec-color);
 }
 
 li{
@@ -83,6 +109,7 @@ h3{
 }
 p{
   font-family: 'Alvenier',sans-serif;
+  margin: 1rem;
 }
 body{
   overflow-x: hidden;
@@ -93,6 +120,7 @@ body{
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+  transition: all .3s ease-in-out;
 }
 img{
   width: 100%;

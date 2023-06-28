@@ -15,17 +15,23 @@ const NavBar = () => {
   };
 
   const [ icon, setIcon ] = useState(false);
+  const selectedTheme = localStorage.getItem('selectedTheme')
 
   const setDarkMode = () => {
     document.querySelector('body').setAttribute('data-theme', 'dark');
+    localStorage.setItem('selectedTheme', 'dark')
   }
   const setLightMode = () => {
     document.querySelector('body').setAttribute('data-theme', 'light');
+    localStorage.setItem('selectedTheme', 'light')
   }
   const toggleTheme = () => {
     setIcon(!icon)
     icon ? setLightMode() : setDarkMode()
   }
+
+  selectedTheme === 'dark' ? setDarkMode() : setLightMode();
+
 
   return (
     <header className="wrapper">

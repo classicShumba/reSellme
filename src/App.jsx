@@ -1,6 +1,5 @@
 import './App.scss'
-// import Home from './Pages/Home';
-import NavBar from './components/navBar'
+import NavBar from './components/NavBar';
 import { Route, BrowserRouter as Router, Routes } from 'react-router-dom';
 import { Suspense, lazy } from 'react';
 import Footer from './components/Footer';
