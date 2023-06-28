@@ -33,10 +33,11 @@
   --dark-blue: #011E55;
   --acc-grn: #018181;
   --acc-blu: #013D7B;
-  --acc-bg: #f8f8f8;
+  --acc-bg: #003f74;
 
-  // color-scheme: light dark;
+  color-scheme: light;
   color: var(--pri-color);
+  background: var(--acc-bg);
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -46,13 +47,17 @@
 }
 
 [data-theme="dark"]{
-  --pri-color: #003F74;
-  --sec-color: #fff;
+  color-scheme: dark;
+  --pri-color: #f8f8f8;
+  --sec-color: #01102c;
   --acc-grey: #303846;
   --dark-blue: #011E55;
   --acc-grn: #018181;
   --acc-blu: #013D7B;
-  --acc-bg: #f8f8f8;
+  --acc-bg: #01102c;
+
+  color: var(--pri-color);
+  background: var(--sec-color);
 }
 
 li{

@@ -1,5 +1,5 @@
 import { NavLink } from "react-router-dom";
-import { ReactComponent as Logo } from "../assets/images/resellme-logo.svg";
+import { ReactComponent as Logo } from "../assets/images/resellme.svg";
 import { ReactComponent as Sun } from "../assets/images/sun.svg";
 import { ReactComponent as Tabler } from "../assets/images/tabler_window.svg";
 import { useState } from "react";
@@ -30,7 +30,10 @@ const NavBar = () => {
   return (
     <header className="wrapper">
       <nav className={burgerOpen === "burger-close" ? "nav-open" : ""}>
-        <Logo className="logo" />
+        <div className="logo">
+          <Logo />
+          <h3>esellme</h3>
+        </div>
         <ul className="menu">
           <li>
             <NavLink to="/">Docs</NavLink>
