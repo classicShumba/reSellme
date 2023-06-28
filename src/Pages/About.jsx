@@ -1,6 +1,6 @@
 import "../styles/_about.scss";
-import laptop from "../assets/images/laptop.png";
-import girl from "../assets/images/girl-in-glasses.png";
+import laptop from "../assets/images/laptop.webp";
+import girl from "../assets/images/girl-in-glasses.webp";
 import Button from "../components/Button";
 
 const About = ({ data }) => {

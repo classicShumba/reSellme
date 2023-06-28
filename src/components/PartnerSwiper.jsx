@@ -6,7 +6,7 @@ const PartnerSwiper = ({data}) => {
   return (
     <Swiper className="p-swiper"
         modules={[Pagination, A11y, Navigation]}
-        slidesPerView={2}
+        slidesPerView='auto'
         spaceBetween={30}
     >
         {

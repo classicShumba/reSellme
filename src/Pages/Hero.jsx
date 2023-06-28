@@ -1,4 +1,4 @@
-import heroBg from "../assets/images/hero-bg.png";
+import heroBg from "../assets/images/hero-bg.webp";
 import Button from "../components/Button";
 const Hero = () => {
   return (
