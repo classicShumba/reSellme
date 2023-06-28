@@ -3,7 +3,7 @@ import Hero from './Hero'
 import { Data } from '../../data/db';
 import Features from './Features';
 import Cases from './Cases';
-import Testimonials from './testimonials';
+import Testimonials from './Testimonials';
 import Faq from './Faq';
 import Partners from './Partners';
 import SignUp from './SignUp';
