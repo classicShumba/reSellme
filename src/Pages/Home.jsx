@@ -1,5 +1,5 @@
 import About from './About'
-import Hero from './hero'
+import Hero from './Hero'
 import { Data } from '../../data/db';
 import Features from './Features';
 import Cases from './Cases';
