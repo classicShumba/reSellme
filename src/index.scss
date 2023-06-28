@@ -37,13 +37,22 @@
 
   // color-scheme: light dark;
   color: var(--pri-color);
-  // background-color: #242424;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
+}
+
+[data-theme="dark"]{
+  --pri-color: #003F74;
+  --sec-color: #fff;
+  --acc-grey: #303846;
+  --dark-blue: #011E55;
+  --acc-grn: #018181;
+  --acc-blu: #013D7B;
+  --acc-bg: #f8f8f8;
 }
 
 li{

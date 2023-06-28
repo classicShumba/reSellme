@@ -24,7 +24,7 @@ const NavBar = () => {
   }
   const toggleTheme = () => {
     setIcon(!icon)
-    
+    icon ? setLightMode() : setDarkMode()
   }
 
   return (
@@ -60,7 +60,7 @@ const NavBar = () => {
               <Tabler />
             </NavLink>
           </li>
-          <span className="mode-toggle" onClick={()=>{toggleTheme()}} >
+          <span className="mode-toggle" onClick={()=>{toggleTheme()}} onChange={toggleTheme} >
             { icon ? <Sun className="icon" /> : <DarkMode className="icon" /> }
           </span>
           <span className="search">
